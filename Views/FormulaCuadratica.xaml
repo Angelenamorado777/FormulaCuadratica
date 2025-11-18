@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormulaCuadratica.Views.FormulaCuadraticaView"
+             xmlns:viewModel="clr-namespace:FormulaCuadratica.ViewsModels"
+             Title="">
+             
+             <ContentPage.BindingContext>
+              <viewModel:FormulacuadraticaViewModel/>
+             </ContentPage.BindingContext>
+
+  <ScrollView>
+
+   <VerticalStackLayout Padding="20" Spacing ="5">
+   <Label Text="Infrese el coeficiente de a: "/>
+   <Entry Text="{Binding A}" Keyboard="Numeric"/>
+   </VerticalStackLayout>
+  </ScrollView>
+
+
+</ContentPage>
